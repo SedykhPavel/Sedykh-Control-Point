@@ -1,0 +1,6 @@
+FROM alpine:latest
+
+WORKDIR /app
+COPY ./bin/date-service /app/date-service
+
+CMD ["./date-service"]
